@@ -11,6 +11,10 @@ public class Laptop extends Producto implements Vendible{
         this.memoriaRam = memoriaRam;
     }
 
+    public Laptop() {
+
+    }
+
     public int getMemoriaRam() {
         return memoriaRam;
     }

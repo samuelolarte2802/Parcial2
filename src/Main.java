@@ -4,13 +4,12 @@ import java.util.Scanner;
 // click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
 public class Main {
     public static void main(String[] args) {
+        //Hecho por Samuel Olarte
         Laptop lap = new Laptop();
         Scanner scan = new Scanner(System.in);
         int opc = 0;
 
         do {
-
-        }while (opc != 3){
 
             System.out.println("""
                     Technology Enterprise
@@ -30,7 +29,9 @@ public class Main {
                     switch (opc1){
 
                         case "1":
-
+                            System.out.println("Ingrese la marca de la laptop");
+                            String marca = scan.next();
+                            lap.setMarca(marca);
                             break;
 
                     }
@@ -38,7 +39,7 @@ public class Main {
 
             }
 
-        }
-
+        }while (opc != 3);
     }
+
 }
